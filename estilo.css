@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+body{
+    margin: 0;
+    font-family: 'Patrick Hand', cursive;
+}
+
+body * {
+    box-sizing: border-box;
+}
+ 
+
+.paginalogin{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(13, 40, 51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ladoesquerdo{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ladoesquerdo > h1{
+    font-size: 3vw;
+    color: rgb(234, 129, 74);
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 500;
+}
+
+.imagemlogin{
+    width: 35vw;
+}
+.ladodireito{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.areadedados{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: rgb(26, 64, 77);
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgb(20, 22, 29);
+}
+
+.areadedados > h1{
+    color: rgb(234, 129, 74);
+    font-weight: 500;
+    margin: 0;
+}
+
+.dadosusuario{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.dadosusuario > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #ffffff;
+    color:rgb(20, 22, 29);
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px rgb(20, 22, 29);
+
+
+}
+
+.dadosusuario > label{
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.dadosusuario > input::placeholder{
+    color:rgb(20, 22, 29);
+    margin-bottom: 10px;
+}
+
+.botaologin{
+    width: 70%;
+    padding: 16px 0;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    background: rgb(234, 129, 74);
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgb(20, 22, 29);
+}
+
+.botaologin:hover{
+    width: 70%;
+    padding: 16px 0;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    background: rgb(212, 103, 44);
+    cursor: pointer;
+    box-shadow: 3px 3px 8px rgb(4, 5, 7);
+}
+
+@media screen and (max-width: 950px){
+    .areadedados{
+        width: 85%;
+    }
+}
+@media screen and (max-width: 600px){
+    .paginalogin{
+        flex-direction: column;
+    }
+    .ladoesquerdo > h1{
+        display: none;
+    }
+    .ladoesquerdo{
+        width: 100%;
+        height: auto;
+    }
+    .ladodireito{
+        width: 100%;
+        height: auto;
+    }
+    .imagemlogin{
+        width: 50vw;
+    }
+    .areadedados{
+        width: 90%;
+    }
+
+}
